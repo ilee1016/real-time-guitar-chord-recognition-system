@@ -1,0 +1,31 @@
+# Mbed build output
+BUILD/
+
+# Python virtual environment
+venv/
+guitar_ML/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Trained model artifacts
+guitar_ML/models/
+*.pkl
+
+# Training data samples (collected per user, not committed)
+guitar_ML/data/**/*.npy
+
+# Claude Code project instructions
+CLAUDE.md
+
+# macOS metadata
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

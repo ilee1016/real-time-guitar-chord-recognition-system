@@ -1,0 +1,21 @@
+{
+    "target_overrides": {
+      "*": {
+        "target.printf_lib": "minimal-printf",
+        "platform.minimal-printf-enable-floating-point": true,
+        "target.features_add": ["DSP"],
+        "target.macros_add": [
+          "ARM_MATH_CM4",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_MATRIX_CHECK",
+          "ARM_MATH_ROUNDING"
+        ]
+      }
+    },
+    "config": {
+        "cmsis-dsp-include": {
+            "help": "Include path for CMSIS-DSP",
+            "value": "\"./CMSIS-DSP/Include\""
+        }
+    }
+}
